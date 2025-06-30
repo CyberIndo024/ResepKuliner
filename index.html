@@ -1,127 +1,48 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Kuliner - [Nama Blog Anda]</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link ke CSS jika ada -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ResepCuan - Resep Enak, Cuan Maksimal!</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>[Nama Blog Kuliner Anda]</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resep">Resep</a></li>
-                <li><a href="#ulasan">Ulasan Restoran</a></li>
-                <li><a href="#tips">Tips Dapur</a></li>
-                <li><a href="#tentang">Tentang Kami</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Selamat Datang di <span>ResepCuan</span></h1>
+      <p>Temukan resep hemat & peralatan masak terbaik!</p>
+      <div class="cta-buttons">
+        <a href="artikel.html" class="btn">Lihat Resep</a>
+        <a href="produk.html" class="btn btn-secondary">Beli Alat Masak</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Banner Utama -->
-    <section class="banner">
-        <img src="[URL Gambar]" alt="Banner Kuliner">
-    </section>
+  <section class="highlight">
+    <h2>🔥 Resep Terbaru</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/nasi-goreng.jpg" alt="Nasi Goreng">
+        <h3>Nasi Goreng Sederhana</h3>
+        <p>Resep simpel cuma 3 bahan. Cocok untuk anak kos!</p>
+      </div>
+      <div class="card">
+        <img src="img/mie-kuah.jpg" alt="Mie Kuah">
+        <h3>Mie Kuah Pedas</h3>
+        <p>Racikan mie instan yang naik level. Ala cafe!</p>
+      </div>
+      <div class="card">
+        <img src="img/tahu-krispi.jpg" alt="Tahu Krispi">
+        <h3>Tahu Krispi Viral</h3>
+        <p>Tahu kriuk tahan lama, cocok buat ide jualan.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Tentang Blog -->
-    <section id="tentang">
-        <h2>Selamat datang di [Nama Blog Kuliner Anda]!</h2>
-        <p>Tempat di mana kami berbagi resep lezat, tips memasak, dan ulasan restoran terfavorit! Bergabunglah dengan kami dalam petualangan kuliner ini.</p>
-    </section>
-
-    <!-- Artikel Terbaru -->
-    <section id="artikel-terbaru">
-        <h2>Artikel Terbaru</h2>
-        <article>
-            <h3>Judul Artikel Pertama</h3>
-            <p><strong>Tanggal:</strong> [Tanggal Publikasi]</p>
-            <p>[Deskripsi pendek tentang artikel]</p>
-            <a href="[Link Artikel]">Baca Selengkapnya</a>
-        </article>
-        <article>
-            <h3>Judul Artikel Kedua</h3>
-            <p><strong>Tanggal:</strong> [Tanggal Publikasi]</p>
-            <p>[Deskripsi pendek tentang artikel]</p>
-            <a href="[Link Artikel]">Baca Selengkapnya</a>
-        </article>
-        <article>
-            <h3>Judul Artikel Ketiga</h3>
-            <p><strong>Tanggal:</strong> [Tanggal Publikasi]</p>
-            <p>[Deskripsi pendek tentang artikel]</p>
-            <a href="[Link Artikel]">Baca Selengkapnya</a>
-        </article>
-    </section>
-
-    <!-- Kategori -->
-    <section id="kategori">
-        <h2>Kategori</h2>
-        <ul>
-            <li><a href="#resep">Resep</a></li>
-            <li><a href="#ulasan">Ulasan Restoran</a></li>
-            <li><a href="#tips">Tips Dapur</a></li>
-            <li><a href="#kisah">Kisah Kuliner</a></li>
-        </ul>
-    </section>
-
-    <!-- Resep Terfavorit -->
-    <section id="resep">
-        <h2>Resep Terfavorit</h2>
-        <article>
-            <h3>Judul Resep 1</h3>
-            <img src="[URL Gambar Resep]" alt="Gambar Resep">
-            <a href="[Link Resep]">Lihat Resep</a>
-        </article>
-        <article>
-            <h3>Judul Resep 2</h3>
-            <img src="[URL Gambar Resep]" alt="Gambar Resep">
-            <a href="[Link Resep]">Lihat Resep</a>
-        </article>
-        <article>
-            <h3>Judul Resep 3</h3>
-            <img src="[URL Gambar Resep]" alt="Gambar Resep">
-            <a href="[Link Resep]">Lihat Resep</a>
-        </article>
-    </section>
-
-    <!-- Ulasan Terbaru -->
-    <section id="ulasan">
-        <h2>Ulasan Terbaru</h2>
-        <article>
-            <h3>Nama Restoran 1</h3>
-            <p>[Deskripsi tentang restoran]</p>
-            <p><strong>Rating:</strong> ★★★★☆</p>
-            <a href="[Link Ulasan]">Baca Ulasan</a>
-        </article>
-        <article>
-            <h3>Nama Restoran 2</h3>
-            <p>[Deskripsi tentang restoran]</p>
-            <p><strong>Rating:</strong> ★★★☆☆</p>
-            <a href="[Link Ulasan]">Baca Ulasan</a>
-        </article>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <section id="kontak">
-            <h2>Kontak Kami</h2>
-            <p>Untuk pertanyaan dan kolaborasi, silakan hubungi kami di: [Email Kontak]</p>
-        </section>
-        <section id="sosial-media">
-            <h2>Sosial Media</h2>
-            <p>
-                <a href="[Link Instagram]">Instagram</a> |
-                <a href="[Link Facebook]">Facebook</a> |
-                <a href="[Link Pinterest]">Pinterest</a>
-            </p>
-        </section>
-    </footer>
+  <footer>
+    <p>&copy; 2025 ResepCuan.com | Dibuat dengan cinta & minyak goreng 🤍</p>
+  </footer>
 
 </body>
 </html>
