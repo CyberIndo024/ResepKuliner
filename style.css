@@ -1,99 +1,128 @@
-/* Reset beberapa gaya default */
+/* Reset & dasar */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
+  background-color: #fffef8;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
-header {
-    background: #ff6347; /* Warna merah tomat */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+/* Hero section */
+.hero {
+  background: url('img/banner-kuliner.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  max-width: 90%;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.hero span {
+  color: #f39c12;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Banner */
-.banner img {
-    width: 100%;
-    height: auto;
+.cta-buttons .btn {
+  background: #27ae60;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-/* Section utama */
-section {
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+.cta-buttons .btn:hover {
+  background: #219150;
 }
 
-h2 {
-    margin-bottom: 15px;
-    color: #ff6347; /* Warna judul */
+.btn-secondary {
+  background: #f39c12;
 }
 
-/* Artikel */
-article {
-    margin-bottom: 20px;
+.btn-secondary:hover {
+  background: #d87e00;
 }
 
-article h3 {
-    font-size: 1.5rem;
+/* Highlight Section */
+.highlight {
+  padding: 2rem;
+  text-align: center;
 }
 
-article img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.highlight h2 {
+  color: #27ae60;
+  margin-bottom: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-
-footer h2 {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #ff6347;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
